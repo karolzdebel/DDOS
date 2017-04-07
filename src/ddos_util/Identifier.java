@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ddosserver;
+package ddos_util;
 
 import java.io.Serializable;
 

@@ -5,6 +5,7 @@
  */
 package ddosserver;
 
+import ddos_util.Identifier;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
