@@ -22,7 +22,8 @@ public class DdosServer {
     private ArrayList<ObjectInputStream> user;
     
     public static void main(String[] args) {
-        // TODO code application logic here
+        DdosServer server = new DdosServer();
+        server.start();
     }
     
     public DdosServer(){
@@ -35,6 +36,10 @@ public class DdosServer {
             e.printStackTrace();
             System.exit(0);
         }
+    }
+
+    public void start(){
+        new ConnectionListener(this);
     }
     
     public ServerSocket getSocket(){
