@@ -39,7 +39,8 @@ public class DdosServer {
     }
 
     public void start(){
-        new ConnectionListener(this);
+        Thread thread = new Thread(new ConnectionListener(this));
+        thread.start();
     }
     
     public ServerSocket getSocket(){
