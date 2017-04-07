@@ -24,7 +24,7 @@ public class Attack implements Serializable{
     private int attackType;     //DDOS attack type
     private int duration;         //length of attack in seconds
 
-    public Attack(String ipAddress, int port, int attackType, int length){
+    public Attack(String ipAddress, int port, int attackType, int duration){
         this.ipAddress = ipAddress;
         this.port = port;
         this.attackType = attackType;
